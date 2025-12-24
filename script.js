@@ -2,7 +2,7 @@ const revealItems = document.querySelectorAll('.reveal');
 const infoCards = document.querySelectorAll('.info-card');
 const infoCloseButtons = document.querySelectorAll('.info-card__close');
 const faqCards = document.querySelectorAll('.faq-grid details');
-const collectionCards = document.querySelectorAll('.collection-card');
+const collectionCards = document.querySelectorAll('details.collection-card');
 const canvas = document.querySelector('.bg__canvas');
 
 if ('IntersectionObserver' in window) {
@@ -82,12 +82,25 @@ if (hoverQuery.matches) {
   });
 
   collectionCards.forEach((card) => {
-    card.addEventListener('toggle', () => {
-      if (!card.open) return;
-      closeCollectionCards(card);
+    const summary = card.querySelector('summary');
+    if (!summary) return;
+    summary.addEventListener('click', (event) => {
+      event.preventDefault();
+      const isOpen = card.hasAttribute('open');
+      closeCollectionCards();
+      if (!isOpen) {
+        card.setAttribute('open', '');
+      }
     });
   });
 }
+
+collectionCards.forEach((card) => {
+  card.addEventListener('toggle', () => {
+    if (!card.open) return;
+    closeCollectionCards(card);
+  });
+});
 
 document.addEventListener('click', (event) => {
   if (!event.target.closest('.info-card')) {
