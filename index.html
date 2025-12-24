@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Torrino DAO</title>
+  <meta name="description" content="Rising Web3 Community of Solana Evangelists">
+  <meta name="theme-color" content="#0b1014">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg">
+    <div class="bg__glow bg__glow--one"></div>
+    <div class="bg__glow bg__glow--two"></div>
+    <div class="bg__glow bg__glow--three"></div>
+    <div class="bg__grid" aria-hidden="true"></div>
+    <div class="bg__network" aria-hidden="true"></div>
+    <canvas class="bg__canvas" aria-hidden="true"></canvas>
+    <div class="bg__stars" aria-hidden="true"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header__inner">
+      <div class="header__top">
+        <div class="brand brand--hero card card--pulse">
+        <img class="brand__logo" src="https://torrino.space/wp-content/uploads/2024/06/torrino-dao.png" alt="Torrino DAO logo" loading="eager" decoding="async">
+        <div>
+          <p class="eyebrow">Torrino DAO</p>
+          <h1 class="brand__title">TORRINO DAO</h1>
+          <p class="brand__lead">Rising Web3 Community of Solana Evangelists</p>
+          <div class="brand__social" aria-label="Social links">
+            <a class="icon-btn" href="https://twitter.com/Torrino_DAO" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2H21l-6.52 7.45L22 22h-6.93l-4.56-5.96L4.3 22H1.54l6.98-7.97L2 2h7l4.11 5.5L18.244 2Zm-2.42 18h2.08L8.26 4H6.18l9.644 16Z"></path></svg>
+            </a>
+            <a class="icon-btn" href="https://discord.gg/yYkwEjcKa9" target="_blank" rel="noopener" aria-label="Discord">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.66 6.4A13.3 13.3 0 0 0 14.5 5.3l-.2.4a10.4 10.4 0 0 1 3 1.2 9.6 9.6 0 0 0-6.6 0 10.4 10.4 0 0 1 3-1.2l-.2-.4a13.3 13.3 0 0 0-3.16 1.1A12.6 12.6 0 0 0 5 16.4a13 13 0 0 0 3.9 2 9.6 9.6 0 0 0 .8-1.3 7.5 7.5 0 0 1-1.5-.8l.4-.3a9.4 9.4 0 0 0 8.8 0l.4.3c-.5.3-1 .6-1.5.8a9.6 9.6 0 0 0 .8 1.3 13 13 0 0 0 3.9-2A12.6 12.6 0 0 0 17.66 6.4ZM9.4 14.4c-.7 0-1.2-.7-1.2-1.5s.5-1.5 1.2-1.5 1.2.7 1.2 1.5-.5 1.5-1.2 1.5Zm5.2 0c-.7 0-1.2-.7-1.2-1.5s.5-1.5 1.2-1.5 1.2.7 1.2 1.5-.5 1.5-1.2 1.5Z"></path></svg>
+            </a>
+          </div>
+        </div>
+        </div>
+        <aside class="header__aside">
+          <img class="isc__logo isc__logo--hero" src="assets/isc-logo.png" alt="Italian Solana Community logo" loading="lazy" decoding="async">
+        </aside>
+      </div>
+
+      <div class="header__mini">
+        <div class="header__links">
+          <a class="chip chip--ghost" href="https://happydao.github.io/torrino-dao-hub/" target="_blank" rel="noopener">HUB</a>
+          <a class="chip chip--ghost" href="#manifesto">Manifesto</a>
+          <a class="chip" href="#highlights">Highlights</a>
+          <a class="chip" href="#collections">Collections</a>
+          <a class="chip" href="#faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal" id="highlights">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Highlights</p>
+            <h2>DAO Essentials</h2>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <details class="info-card card card--pulse">
+            <summary>
+              <span class="info-card__title">Torrino NFTs</span>
+              <span class="info-card__hint">
+                <span class="hint-desktop">Hover for details</span>
+                <span class="hint-mobile">Tocca per dettagli</span>
+              </span>
+            </summary>
+            <div class="info-card__panel">
+              <button class="info-card__close" type="button" aria-label="Chiudi dettagli">X</button>
+              <p>Torrino is an iconic collection of 500 NFTs generated on the Solana blockchain: Torrino NFTs are inspired to a stylized gecko, considered as a universal good luck charm, combined with five talismans attracting fortune, according to different human cultures. The entire NFTs collection is backed by Torrino DAO with a community-driven approach. Torrino DAO represents a thriving community of Solana evangelists and crypto traders who strongly believe in the rise of Web3 space and are united by a passion for disruptive innovation.</p>
+              <div class="info-card__actions">
+                <a class="chip chip--primary" href="https://magiceden.io/marketplace/torrino_dao_collection" target="_blank" rel="noopener">Buy On Magic Eden</a>
+                <a class="chip" href="https://www.tensor.trade/trade/solnauta" target="_blank" rel="noopener">Buy On Tensor</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="info-card card card--pulse" id="treasury">
+            <summary>
+              <span class="info-card__title">Treasury</span>
+              <span class="info-card__hint">
+                <span class="hint-desktop">Hover for details</span>
+                <span class="hint-mobile">Tocca per dettagli</span>
+              </span>
+            </summary>
+            <div class="info-card__panel">
+              <button class="info-card__close" type="button" aria-label="Chiudi dettagli">X</button>
+              <p>Any Torrino NFT holder is a DAO voting member, DAO's mission is to create value for the entire collection in a long-term perspective and protect the value of Torrino NFT Collection from typical pump and dump scheme. <a href="https://app.step.finance/en/dashboard?watching=EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD" target="_blank" rel="noopener">DAO Treasury</a> is essential for fuelling the success and longevity of the entire NFT collection, in fact, DAO Treasury can use funds collected by minting to purchase other digital collectibles from emerging Solana NFT collections as well as acquire any type of crypto assets inside the Solana ecosystem according to <a href="https://torrino.space/manifesto/" target="_blank" rel="noopener">DAO Manifesto</a>. <a href="https://app.step.finance/en/dashboard?watching=EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD" target="_blank" rel="noopener">Treasury Address</a> is public on Solana blockchain, therefore anyone can check it.</p>
+            </div>
+          </details>
+
+          <details class="info-card card card--pulse" id="bookvalue">
+            <summary>
+              <span class="info-card__title">Book Value</span>
+              <span class="info-card__hint">
+                <span class="hint-desktop">Hover for details</span>
+                <span class="hint-mobile">Tocca per dettagli</span>
+              </span>
+            </summary>
+            <div class="info-card__panel">
+              <button class="info-card__close" type="button" aria-label="Chiudi dettagli">X</button>
+              <p>We have had enough of monkeys, teddy bears and pixelated silhouettes when we think about a collection of NFTs: for this reason we have created a completely original concept design, really unlike from the most famous collections in the world. Even if the collection boasts an exclusive originality compared to others on the market, it's in terms of utility that it stands out the most. Infact Torrino DAO manages <a href="https://app.step.finance/en/dashboard?watching=EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD" target="_blank" rel="noopener">DAO Treasury</a> with the aim of creating and maintaining a suitable endowment of collectible resources to support the entire collection. The Book Value of each Torrino NFT represents abstractally the equivalent value in USDC that each NFT would have if the DAO were dissolved, all DAO Treasury assets sold and the obtained monies divided among all NFT holders in relation to the number of NFTs held in their wallet.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="collections">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Collections</p>
+            <h2>Gen1 &amp; Gen2</h2>
+          </div>
+        </div>
+
+        <div class="collection-grid">
+          <details class="collection-card card">
+            <summary>
+              <div>
+                <h3>Torrino NFTs (Gen1)</h3>
+                <p>Preview the curated Gen1 highlights.</p>
+              </div>
+              <span class="chip">Open</span>
+            </summary>
+            <div class="collection-preview">
+              <img src="https://torrino.space/wp-content/uploads/2024/06/69.webp" alt="Torrino NFT #70" loading="lazy" decoding="async">
+              <img src="https://torrino.space/wp-content/uploads/2024/06/306.webp" alt="Torrino NFT #307" loading="lazy" decoding="async">
+              <img src="https://torrino.space/wp-content/uploads/2024/06/490.webp" alt="Torrino NFT #491" loading="lazy" decoding="async">
+            </div>
+            <div class="collection-grid__items">
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/69.webp" alt="Torrino NFT #70" loading="lazy" decoding="async">
+                <div>
+                  <h4>#70</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/4JpvCGRueueKjPzYagGMBofkG2huFDJZsA3iWbUW493E?name=%2370" target="_blank" rel="noopener">BUY</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/306.webp" alt="Torrino NFT #307" loading="lazy" decoding="async">
+                <div>
+                  <h4>#307</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/4XnLZfpUCmiRVpG3yxRfJyGVqSP1XT7e8k6M11AqaaiU?name=%23307" target="_blank" rel="noopener">BUY</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/490.webp" alt="Torrino NFT #491" loading="lazy" decoding="async">
+                <div>
+                  <h4>#491</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/2WdbQFLfvq3nAi4DMrGndTxTKtM1g7QgzWJVbPJpPXKZ?name=%23491" target="_blank" rel="noopener">BUY</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/498.webp" alt="Torrino NFT #499" loading="lazy" decoding="async">
+                <div>
+                  <h4>#499</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/CuKV3LXEFcCxCy9jM56Y5mHM8XPGSSq3gFPgSdQzw1Yb?name=%23499" target="_blank" rel="noopener">BUY</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/494.webp" alt="Torrino NFT #495" loading="lazy" decoding="async">
+                <div>
+                  <h4>#495</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/HiiswTgDVm2dQEAbjwTBCTcmL4z3uuM3F3ZmdLXsudh7?name=%23495" target="_blank" rel="noopener">BUY</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/132-1.webp" alt="Torrino NFT #133" loading="lazy" decoding="async">
+                <div>
+                  <h4>#133</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/HD5ure7NaEQyRJxbxtZkc3VPYNxfi6TDgwhEKbr1jbeX?name=%23133" target="_blank" rel="noopener">BUY</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/06/312.webp" alt="Torrino NFT #313" loading="lazy" decoding="async">
+                <div>
+                  <h4>#313</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/3VA9v4CEkrhgmhv188Td5asUQhEiHaUPuLERo9Am3FCf?name=%23313" target="_blank" rel="noopener">BUY</a>
+              </article>
+            </div>
+          </details>
+
+          <details class="collection-card card">
+            <summary>
+              <div>
+                <h3>Solnauta (Gen2) by Torrino DAO</h3>
+                <p>Curated Solnauta highlights with quick access.</p>
+              </div>
+              <span class="chip">Open</span>
+            </summary>
+            <div class="collection-preview">
+              <img src="https://torrino.space/wp-content/uploads/2024/07/610.jpeg" alt="Solnauta #610" loading="lazy" decoding="async">
+              <img src="https://torrino.space/wp-content/uploads/2024/07/665.jpg" alt="Solnauta #665" loading="lazy" decoding="async">
+              <img src="https://torrino.space/wp-content/uploads/2024/07/705.jpg" alt="Solnauta #705" loading="lazy" decoding="async">
+            </div>
+            <div class="collection-grid__items">
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/610.jpeg" alt="Solnauta #610" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #610</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/AtcG6A7W22syVtEM3nsTrVJ1K7eHEzTJAWqSZ2oGtHcu" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/665.jpg" alt="Solnauta #665" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #665</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/GSTDLfizhTGAN3yXtXowgeMSqLuVmhTf8ZymCwGccN1s" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/102.jpg" alt="Solnauta #102" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #102</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/7iy8afj9YFS6PqoQaThxGzJERemuje7SebHBgNsAa738" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/705.jpg" alt="Solnauta #705" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #705</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/8zUReE6Ne5tQRvEdca9mdWVx6fv11r2Nh35kEWjkkjgy" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/370.jpg" alt="Solnauta #370" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #370</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/2bvSmqsx2fhc9TLyeoHoVhoDPNAJgU2thWmneJ4p6ZLS" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/374.jpg" alt="Solnauta #374" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #374</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/81XVZLURLk5yMFp76iqv9UpiZU397EyKREWny9ZquSru" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/690.jpg" alt="Solnauta #690" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #690</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/AikQrgU2dfKywutZEvJ5Wtx7QgedEhuUjDt4oQ22D2bu" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/824.jpg" alt="Solnauta #824" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #824</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/5SQswoMATPJ1YjCusDGArRL3EXkSNLJR4fqj7pH7cKt4" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/183.jpg" alt="Solnauta #183" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #183</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/2DSmxsJnUpHCiRV4NsqxcDwRn7kHSwbWXQisucHmUZHy" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/178.jpg" alt="Solnauta #178" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #178</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/BFcpGZxkskJyVrq4XKnJmf7LcFQCD4MYULMsrZjQmHqr" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/863.jpg" alt="Solnauta #863" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #863</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/7Gpu4VEJdqd1UGJARob7pPCYgPBDro6eHa3qcMZHMwSf" target="_blank" rel="noopener">Take a look</a>
+              </article>
+              <article class="nft-card">
+                <img src="https://torrino.space/wp-content/uploads/2024/07/189.jpg" alt="Solnauta #189" loading="lazy" decoding="async">
+                <div>
+                  <h4>Solnauta #189</h4>
+                  <p>Torrino DAO</p>
+                </div>
+                <a class="chip chip--ghost" href="https://magiceden.io/item-details/BMMsdox5pDD2tXq3CEAPXxeDKufXwkpWZwWfZkqUjTaz" target="_blank" rel="noopener">Take a look</a>
+              </article>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="manifesto">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Manifesto</p>
+            <h2>How DAO is ruled?</h2>
+          </div>
+        </div>
+        <ol class="manifesto-list">
+          <li>A Decentralized Autonomous Organization (DAO) called Torrino DAO is set up among all the owners of a Torrino NFT Collection.</li>
+          <li>Torrino DAO is a digitally native organization operating on a community-based ownership model deployed with Solana smart contracts.</li>
+          <li>Each Torrino NFT owner is a Torrino DAO member.</li>
+          <li>DAO Manifesto regulates how DAO works and operate.</li>
+          <li>Purpose of the DAO is to preserve and protect the value and consistency of its treasury in a long term prospective.</li>
+          <li>Seventy percent of funds, collected from NFT minting process, will represent the initial endowment of DAO treasury.</li>
+          <li>Only DAO members have the power over the destination of DAO treasury.</li>
+          <li>Torrino DAO exists exclusively on Solana blockchain, therefore if Solana blockchain ceases to exist then Torrino DAO will also cease to exist too.</li>
+          <li>Torrino DAO is led by a Governance Council (GC) which has the function of supervising and guaranteeing compliance with Manifesto among all DAO members.</li>
+          <li>Governance Council presents the improvement proposals (IP) to DAO for their approval in order to allow the achievement of the provisions of article 5.</li>
+          <li>To be approved any IP must obtain at least an approval quorum of 51% of all rights to vote.</li>
+          <li>One right to vote is obtained for each NFT held.</li>
+          <li>Only natural persons or representatives of legal entities with proven competence and experience in the field of collectibles can be appointed as members of GC.</li>
+          <li>GC must be composed of a minimum of two to a maximum of seven members.</li>
+          <li>Each member of GC has only one per capita right to vote.</li>
+          <li>GC resolutions must be approved with at least 2/3 of the total per capita rights to vote.</li>
+          <li>GC members must be categorically DAO members.</li>
+          <li>Upon creation of the collection, first two members of GC are nominated directly by development team of Torrino NFT Collection.</li>
+          <li>Each IP must have at least an unrestricted voting time of two days.</li>
+          <li>Each member of GC can propose the expulsion of another member of the GC for indecorous or hostile behavior; the decision of GC about the expulsion of one of its members, if approved by the other members of GC, must be approved by DAO with at least an approval quorum of 51% of all rights to vote.</li>
+          <li>GC may propose the appointment of a new member of GC to DAO with at least 2/3 of the consent of the members of GC. DAO members must approve the appointment with an approval quorum of 51% of all rights to vote.</li>
+          <li>GC appoints the Guardian within its circle, who has the function of supervising compliance with the rules established by DAO Manifesto and, if necessary, is free to propose to DAO additional IPs necessary for the achievement of article 5.</li>
+          <li>Guardian ceases to function upon voluntary resignation, in the event of sudden death or if all remaining members of the GC request his replacement via IP and DAO confirms with at least an approval quorum of 51% of all right to vote.</li>
+          <li>All IPs are based on Solana blockchain, however the call to vote can also be mentioned on social platforms like Twitter or Discord.</li>
+          <li>GC must receive a symbolic annual refund for its duties which is decided through an online consultation between all DAO members.</li>
+          <li>GC can appoint a Collectibles Specialist Panel (CSP) consisting of a minimum of three and a maximum of ten DAO members.</li>
+          <li>CSP has to provide guidance, analysis and suggestions to GC in order to help him achieving with the provisions of article 5.</li>
+          <li>GC decides independently if and how CSP can be reimbursed for its assistance role.</li>
+          <li>Composition of CSP is variable and depends on the needs of GC: only DAO members with proven knowledge of crypto markets can be appointed as members of CSP.</li>
+          <li>In the event of force majeure or by the unanimous will of GC, DAO can be dissolved forever by releasing all its members from compliance with DAO Manifesto after dividing its entire treasury into pro-quota parts in favour of all Torrino NFT holders.</li>
+          <li>Any DAO Manifesto provisions can be modified or integrated by DAO with at least an approval quorum of 51% of all rights to vote.</li>
+          <li>Only GC has the authority to propose changes or integrations to DAO Manifesto with at least an approval quorum of 2/3 of all rights to vote.</li>
+          <li>English is the only authorized language for IP drafting.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Frequently asked questions</p>
+            <h2>Frequently asked questions</h2>
+          </div>
+        </div>
+        <div class="faq-grid">
+          <details class="qa-card card">
+            <summary>Which Are The Risks You Run If You Buy A Torrino NFT?</summary>
+            <div class="qa-card__panel">
+              <p>Solana NFTs are in a constant state of change, with holders' expectations shifting frequently. There is no guarantee whatsoever that Torrino NFT collection will be successful or that its price will remain stable even with the support of DAO Treasury. NFTs are volatile and uncertain, their prices can be also hit by heavy impact in others blockchain failures or by hostility of new laws passed by international regulators. You should buy a Torrino NFT exclusively for the pleasure of owning a unique digital artwork and to be a Torrino DAO member, while those who buy it for speculative purposes are in fact making an insane risky bet.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>Does It Make Sense To Buy A Torrino NFT?</summary>
+            <div class="qa-card__panel">
+              <p>The collection was conceived to fully satisfy the three structural features of every successful NFT collection: originality, rarity and utility, however it is precisely utility that makes the collection attractive and different from many others, thanks to the presence of DAO Treasury that has the ambitious goal of protecting the value of the entire collection over time.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>Which Is the utility of a Torrino NFT?</summary>
+            <div class="qa-card__panel">
+              <p>Whoever owns a Torrino NFT becomes a Torrino DAO member, DAO Treasury represents the supporting pillar of the entire NFT collection.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>How is DAO Ruled?</summary>
+            <div class="qa-card__panel">
+              <p>The functioning of DAO is specified inside DAO Manifesto, only holders of a Torrino NFT can take part during voting session.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>How Many Votes Are Assigned During A Voting Session?</summary>
+            <div class="qa-card__panel">
+              <p>Each NFT held corresponds to one voting right, therefore, whoever owns five NFTs then holds five voting rights and so on.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>Who Has The Power To Move Treasury Funds?</summary>
+            <div class="qa-card__panel">
+              <p>This power is reserved exclusively to DAO, which expresses itself with the vote on the destination of the resources proposed by GC with the support of CSP. The transfer of treasury funds is regulated by a smart contract which is activated only in the event of an approved vote.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>What Quorum An Improvement Proposal [IP] Must Have To Be Approved By DAO?</summary>
+            <div class="qa-card__panel">
+              <p>At least 51% of the voting rights is required, if this is not achieved the proposal is rejected and no transfer of funds can be performed.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>How Can I Know the balance Of DAO Treasury?</summary>
+            <div class="qa-card__panel">
+              <p><a href="https://app.step.finance/en/dashboard?watching=EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD" target="_blank" rel="noopener">Treasury Address</a> is public on Solana blockchain, therefore anyone can check it, furthermore the calls to vote and all the operations concerning the treasury are available on our <a href="https://discord.gg/yYkwEjcKa9" target="_blank" rel="noopener">Discord server.</a></p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>Can I Apply To Be Appointed As GC Member Or CSP Member?</summary>
+            <div class="qa-card__panel">
+              <p>DAO members can apply to be appointed as GC member or CSP member in compliance with the provisions of DAO Manifesto, however considering that there could also be intrusion attempts [raids] by tricksters and bandits, the applications are examined by GC with veto power and subsequently proposes for last approval to DAO.</p>
+            </div>
+          </details>
+          <details class="qa-card card">
+            <summary>How To Apply For Governance Council?</summary>
+            <div class="qa-card__panel">
+              <p>Applications must be published in the relevant section of Torrino DAO Discord Server and must allow the personal identification of the proponent thanks to Twitter Blue Verified Badge or else Linkedin profile.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__inner">
+      <p><strong>Torrino DAO</strong> is made with passion thanks to <strong>Solana</strong> <strong>Blockchain</strong> | <a href="https://yassinemahfoud.com/" target="_blank" rel="noopener">Credits</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
