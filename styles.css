@@ -444,7 +444,7 @@ img {
   font-size: 0.85rem;
 }
 
-.info-card__hint .hint-mobile {
+.hint-mobile {
   display: none;
 }
 
@@ -516,6 +516,13 @@ img {
   color: var(--muted);
 }
 
+.collection-hint {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+}
+
 .collection-preview {
   display: none;
   gap: 10px;
@@ -533,7 +540,9 @@ img {
 .collection-grid__items {
   display: grid;
   gap: 12px;
-  padding: 0 20px 20px;
+  padding: 0 20px 18px;
+  max-height: 320px;
+  overflow: auto;
 }
 
 .nft-card {
@@ -541,15 +550,15 @@ img {
   grid-template-columns: auto 1fr auto;
   gap: 14px;
   align-items: center;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(10, 16, 22, 0.7);
 }
 
 .nft-card img {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -773,11 +782,11 @@ img {
 }
 
 @media (hover: none) {
-  .info-card__hint .hint-desktop {
+  .hint-desktop {
     display: none;
   }
 
-  .info-card__hint .hint-mobile {
+  .hint-mobile {
     display: inline;
   }
 }
@@ -807,6 +816,10 @@ img {
   .info-card__panel,
   .qa-card__panel {
     font-size: 0.9rem;
+  }
+
+  .collection-grid__items {
+    max-height: 260px;
   }
 
   .chip {

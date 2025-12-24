@@ -2,6 +2,7 @@ const revealItems = document.querySelectorAll('.reveal');
 const infoCards = document.querySelectorAll('.info-card');
 const infoCloseButtons = document.querySelectorAll('.info-card__close');
 const faqCards = document.querySelectorAll('.faq-grid details');
+const collectionCards = document.querySelectorAll('.collection-card');
 const canvas = document.querySelector('.bg__canvas');
 
 if ('IntersectionObserver' in window) {
@@ -28,6 +29,12 @@ const closeInfoCards = (currentCard = null) => {
   });
 };
 
+const closeCollectionCards = (currentCard = null) => {
+  collectionCards.forEach((card) => {
+    if (card !== currentCard) card.removeAttribute('open');
+  });
+};
+
 const hoverQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
 
 if (hoverQuery.matches) {
@@ -38,6 +45,20 @@ if (hoverQuery.matches) {
     }
     card.addEventListener('mouseenter', () => {
       closeInfoCards(card);
+      card.setAttribute('open', '');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.removeAttribute('open');
+    });
+  });
+
+  collectionCards.forEach((card) => {
+    const summary = card.querySelector('summary');
+    if (summary) {
+      summary.addEventListener('click', (event) => event.preventDefault());
+    }
+    card.addEventListener('mouseenter', () => {
+      closeCollectionCards(card);
       card.setAttribute('open', '');
     });
     card.addEventListener('mouseleave', () => {
@@ -59,11 +80,21 @@ if (hoverQuery.matches) {
       if (card) card.removeAttribute('open');
     });
   });
+
+  collectionCards.forEach((card) => {
+    card.addEventListener('toggle', () => {
+      if (!card.open) return;
+      closeCollectionCards(card);
+    });
+  });
 }
 
 document.addEventListener('click', (event) => {
   if (!event.target.closest('.info-card')) {
     closeInfoCards();
+  }
+  if (!event.target.closest('.collection-card')) {
+    closeCollectionCards();
   }
   if (!event.target.closest('.qa-card')) {
     faqCards.forEach((card) => card.removeAttribute('open'));
