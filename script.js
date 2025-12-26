@@ -4,6 +4,8 @@ const infoCloseButtons = document.querySelectorAll('.info-card__close');
 const faqCards = document.querySelectorAll('.faq-grid details');
 const collectionCards = document.querySelectorAll('details.collection-card');
 const canvas = document.querySelector('.bg__canvas');
+const treasuryValue = document.querySelector('[data-treasury-value]');
+const treasuryUpdated = document.querySelector('[data-treasury-updated]');
 
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
@@ -189,4 +191,20 @@ if (canvas) {
   draw();
   if (!prefersReduced) requestAnimationFrame(tick);
   window.addEventListener('resize', resize);
+}
+
+if (treasuryValue && treasuryUpdated) {
+  fetch('data/data.json')
+    .then((response) => (response.ok ? response.json() : null))
+    .then((data) => {
+      if (!data) return;
+      const formattedValue = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0,
+      }).format(data.treasuryValue || 0);
+      treasuryValue.textContent = formattedValue;
+      treasuryUpdated.textContent = data.lastUpdated || '--/--/--';
+    })
+    .catch(() => {});
 }
