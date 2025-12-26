@@ -1,0 +1,21 @@
+{
+  "lastUpdated": "26/12/25",
+  "treasuryValue": 367213,
+  "treasuryGen1": 330492,
+  "treasuryGen2": 36721,
+  "solPrice": 122,
+  "nftGen1Value": 661,
+  "nftGen1ValueSol": "5.42",
+  "nftGen2Value": 41,
+  "nftGen2ValueSol": "0.34",
+  "gen1ListingPrice": 381,
+  "gen1ListingPriceSol": "3.13",
+  "gen2ListingPrice": 61,
+  "gen2ListingPriceSol": "0.50",
+  "gen1Discount": "-42.30",
+  "gen1DiscountLabel": "In sconto",
+  "gen2Discount": "46.93",
+  "gen2DiscountLabel": "Sopravvalutato",
+  "stableValue": 182111,
+  "stablePercentage": 50
+}
