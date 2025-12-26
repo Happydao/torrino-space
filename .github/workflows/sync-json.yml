@@ -1,0 +1,39 @@
+name: Sync JSON daily
+
+on:
+  schedule:
+    - cron: "10 4 * * *" # ogni giorno alle 04:10 UTC (05:10/06:10 IT)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v4
+
+      - name: Download JSON from source
+        run: |
+          mkdir -p data
+          curl -fsSL \
+            "https://raw.githubusercontent.com/Happydao/torrino-dao-dashboard/main/data.json" \
+            -o data/data.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/data.json
+
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica rilevata. Commit non necessario."
+            exit 0
+          fi
+
+          git commit -m "chore: sync treasury data (daily)"
+          git push
