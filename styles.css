@@ -505,13 +505,23 @@ img {
   align-items: flex-start;
 }
 
+@media (min-width: 900px) {
+  .collection-actions .collection-cta {
+    margin-top: 50px;
+  }
+
+  .hub-card {
+    margin-top: 23px;
+  }
+}
+
 .collection-cta {
   width: min(100%, 360px);
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border: 1px solid rgba(90, 209, 255, 0.26);
   background: rgba(12, 18, 24, 0.72);
   text-decoration: none;
@@ -1429,6 +1439,10 @@ img {
     align-self: center;
   }
 
+  .isc__logo--hero {
+    margin-top: 10px;
+  }
+
   .info-grid,
   .collection-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1443,18 +1457,22 @@ img {
     height: 110px;
   }
 
+  .header-collection-card:not(.header-collection-card--right) .collection-marquee {
+    margin-left: 12px;
+  }
+
   .treasury-grid {
     grid-template-columns: 1.6fr 0.9fr;
     align-items: start;
   }
 
-  .hub-grid {
-    grid-template-columns: 1.4fr 0.7fr;
-    align-items: start;
+  .treasury-card {
+    margin-top: 18px;
   }
 
+  .hub-grid,
   .collection-layout {
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.6fr 0.9fr;
     align-items: start;
   }
 
@@ -1716,9 +1734,24 @@ img {
     line-height: 1.35;
   }
 
+  .collection-actions {
+    justify-content: flex-end;
+  }
+
+  .collection-actions .collection-cta {
+    margin-left: auto;
+  }
+
+  .hub-card {
+    justify-self: start;
+    margin-right: auto;
+  }
+
   .isc__logo--hero {
     margin-left: 0;
     justify-self: start;
+    transform: translate(-15px, -40px) scale(1.11);
+    transform-origin: left top;
   }
 
   .collection-grid__items {
@@ -1769,6 +1802,24 @@ img {
   .card:not(.qa-card),
   .card:not(.qa-card)::after {
     animation: none;
+  }
+
+  .treasury-card.card {
+    animation: treasuryGlow 4.5s ease-in-out infinite;
+  }
+
+  .collection-cta.card,
+  .hub-card.card {
+    animation: borderBlink 4.5s ease-in-out infinite;
+  }
+
+  .collection-cta.card::after,
+  .hub-card.card::after {
+    animation: pulseGlow 4.5s ease-in-out infinite;
+  }
+
+  .brand--hero.card {
+    animation: heroPulse 4.5s ease-in-out infinite;
   }
 }
 
