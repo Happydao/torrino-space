@@ -3,6 +3,7 @@ const infoCards = document.querySelectorAll('.info-card');
 const infoCloseButtons = document.querySelectorAll('.info-card__close');
 const faqCards = document.querySelectorAll('.faq-grid details');
 const collectionCards = document.querySelectorAll('details.collection-card');
+const govCards = document.querySelectorAll('.gov-card');
 const canvas = document.querySelector('.bg__canvas');
 const treasuryValue = document.querySelector('[data-treasury-value]');
 const treasuryUpdated = document.querySelector('[data-treasury-updated]');
@@ -33,6 +34,12 @@ const closeInfoCards = (currentCard = null) => {
 
 const closeCollectionCards = (currentCard = null) => {
   collectionCards.forEach((card) => {
+    if (card !== currentCard) card.removeAttribute('open');
+  });
+};
+
+const closeGovCards = (currentCard = null) => {
+  govCards.forEach((card) => {
     if (card !== currentCard) card.removeAttribute('open');
   });
 };
@@ -110,6 +117,9 @@ document.addEventListener('click', (event) => {
   }
   if (!event.target.closest('.collection-card')) {
     closeCollectionCards();
+  }
+  if (!event.target.closest('.gov-card')) {
+    closeGovCards();
   }
   if (!event.target.closest('.qa-card')) {
     faqCards.forEach((card) => card.removeAttribute('open'));
